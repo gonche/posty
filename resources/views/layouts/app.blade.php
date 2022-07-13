@@ -7,8 +7,8 @@
     <title>Posty</title>
     @vite('resources/css/app.css')
 </head>
-    <body class="bg-gray-100">
-    <nav class="p-6 bg-white flex sm:justify-between">
+    <body class="bg-gray-200">
+    <nav class="p-6 bg-white flex justify-between mb-6">
         <ul class="flex items-center">
             <li>
                 <a href="" class="p-6">Home</a>
@@ -28,7 +28,7 @@
                 <a href="" class="p-6">Login</a>
             </li>
             <li>
-                <a href="" class="p-6">Register</a>
+                <a href="{{ route('register') }}" class="p-6">Register</a>
             </li>
 
             <li>
