@@ -21,19 +21,22 @@
             </li>
         </ul>
         <ul class="flex items-center">
+            @auth
             <li>
                 <a href="" class="p-6">Andy Gardner</a>
             </li>
             <li>
-                <a href="" class="p-6">Login</a>
+                <a href="{{ route('logout') }}" class="p-6">Logout</a>
+            </li>
+            @endauth
+            @guest
+            <li>
+                <a href="{{ route('login') }}" class="p-6">Login</a>
             </li>
             <li>
                 <a href="{{ route('register') }}" class="p-6">Register</a>
             </li>
-
-            <li>
-                <a href="" class="p-6">Logout</a>
-            </li>
+            @endguest
         </ul>
     </nav>
         @yield('content')
